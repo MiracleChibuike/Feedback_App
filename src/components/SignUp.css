@@ -1,0 +1,37 @@
+
+#nameUser, #emailUser, #passwordUser{
+    border: 1px solid var(--clr-white-init);
+    background: transparent;
+    padding: 13px 10px;
+    border-radius: 50px;
+    outline: none;
+    width: 250px;
+    color: var(--clr-white-init);
+    font-size: 16px;
+}
+#nameUser:hover, #emailUser:hover, #passwordUser:hover{
+    cursor: pointer;
+}
+
+#nameUser:focus, #emailUser:focus, #passwordUser:focus{
+     box-shadow: 0 0 10px var(--clr-dark);
+}
+
+#signUpBtn{
+       width: 100%;
+    padding: 15px 0;
+    background: var(--clr-white-init);
+    color: var(--clr-dark);
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#signUpBtn:hover{
+       cursor: pointer;
+    background: var(--clr-dark);
+    color: var(--clr-white-init);
+    transition: .3s;
+    border-radius: 2px;
+}

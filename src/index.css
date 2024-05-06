@@ -1,0 +1,17 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Syne", sans-serif; */
+  font-family: "Sansita Swashed", system-ui;
+   font-family: "Ubuntu", sans-serif;
+
+}
+
+:root{
+  --ash-white: #f4f4f4;
+  --light-blue: rgb(86, 86, 218);
+  --clr-dark: rgb(0, 0, 0);
+  --clr-dark-gray: rgb(20, 20, 20);
+}
+

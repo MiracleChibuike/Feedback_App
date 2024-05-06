@@ -1,0 +1,102 @@
+
+
+:root{
+    --clr-white-init: #fff;
+    --clr-dark: #000;
+    --clr-gray: rgb(200, 200, 200);
+}
+.formBody{
+    display: grid;
+    min-height: 100vh;
+    place-content: center;
+    align-content: center;
+    background: linear-gradient(rgba(90, 90, 43, 0.4), rgba(33, 33, 43, 0.9)),
+     url(https://images.unsplash.com/photo-1619441207978-3d326c46e2c9?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D) no-repeat center center/cover;
+}
+
+.formContainer{
+    background: transparent;
+    box-shadow: 0 0 15px var(--clr-dark);
+    opacity: .8;
+    border: 1px solid var(--clr-white-init);
+    border-radius: 15px;
+    padding: 20px 40px;
+}
+.title{
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--clr-white-init);
+    margin: 20px 0;
+}
+
+.username, .passWord{
+    margin: 25px 0;
+}
+form ::placeholder{
+    font-size: 13px;
+    color: var(--clr-gray);
+}
+#userPassword, #userName{
+    border: 1px solid var(--clr-white-init);
+    background: transparent;
+    padding: 13px 10px;
+    border-radius: 50px;
+    outline: none;
+    width: 250px;
+    color: var(--clr-white-init);
+    font-size: 16px;
+
+}
+#userPassword, #userName{
+    cursor: pointer;
+}
+#userPassword:focus, #userName:focus{
+    box-shadow: 0 0 10px var(--clr-dark);
+}
+
+.loginHelpful{
+    padding: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    color: var(--clr-white-init);
+}
+.notice, .forgot{
+    font-size: 15px;
+}
+
+.loginContainer{
+    text-align: center;
+    padding: 15px 0;
+}
+
+#submitBtn{
+    width: 100%;
+    padding: 15px 0;
+    background: var(--clr-white-init);
+    color: var(--clr-dark);
+    border: none;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+}
+#submitBtn:hover{
+    cursor: pointer;
+    background: var(--clr-dark);
+    color: var(--clr-white-init);
+    transition: .3s;
+    border-radius: 2px;
+}
+
+.signUpLink strong a{
+    cursor: pointer;
+    color: var(--clr-white-init);
+    text-decoration: none;
+}
+.signUpLink strong:hover{
+        text-decoration: underline;
+}
+.Create_Account{
+    text-align: center;
+    padding: 15px 0;
+    color: var(--clr-white-init);
+}

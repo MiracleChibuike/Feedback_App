@@ -1,0 +1,105 @@
+
+
+
+:root{
+  --ash-white: #f4f4f4;
+  --light-blue: rgb(86, 86, 218);
+  --clr-shade-blue: rgb(70, 70, 200);
+  --clr-dark: rgb(0, 0, 0);
+  --clr-dark-gray: rgba(144, 139, 139, 0.268);
+  --clr-white: #fff;
+}
+
+.Body_Form{
+    background: url(../feedback-Forms/images/Customerbg2.jpeg) no-repeat center center/cover;
+     display: grid;
+    min-height: 100vh;
+    place-content: center;
+    align-content: center;
+}
+
+.formMain{
+    border-radius: 3px;
+    box-shadow: 0 0 15px var(--clr-dark-gray);
+    padding: 20px 30px;
+    margin: 10px 20px;
+    background: var(--ash-white);
+}
+.formTitleDiv{
+  margin-bottom: 20px;
+}
+.FormTitle{
+   color: var(--clr-dark);
+     text-align: center;
+    font-size: 1.8rem;
+    margin: 20px 0;
+}
+
+#hand_wave{
+    width: 50px;
+    position: relative;
+    top: 60px;
+    left: 10px;
+}
+
+.cancelDiv{
+    display: flex;
+    justify-content: flex-end;
+}
+#cancel_icon{
+    width: 15px;
+}
+
+.AppUsage, .Appmotivation, .AppFeature, .AppImprove{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0;
+}
+
+#AppUsageLabel, #Improved_Label, #Motivation_label, #feature_Label{
+    margin: 10px 0;
+    font-size: 17px;
+}
+#Motivation, #UsageInput, #Feature, #Improved{
+    padding: 15px 8px;
+    background: transparent;
+    border: 1px solid var(--clr-dark-gray);
+    border-radius: 4px;
+    outline: none;
+    font-size: 15px;
+}
+
+#Motivation:focus, #UsageInput:focus, #Feature:focus, #Improved:focus{
+    box-shadow: 0 0 5px var(--clr-shade-blue);
+}
+#follow-Up{
+    font-size: 14px;
+}
+.submitDiv{
+    margin: 25px 0;
+}
+#submit_Btn{
+    width: 100%;
+    background: var(--clr-shade-blue);
+    color: var(--clr-white);
+    border: none;
+    border-radius: 2px;
+    padding: 15px 0;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+#submit_Btn:hover{
+    background: var(--light-blue);
+    border-radius: 20px;
+    transition: .4s;
+}
+
+@media (width <= 750px) {
+   #hand_wave{
+    width: 40px;
+    position: relative;
+    top: 60px;
+    left: -20px;
+}
+}
