@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "../feedback-Forms/Customer.css";
-import CancelIcon from '../feedback-Forms/images/CancelIcon.png';
+import cancelIcon from '../feedback-Forms/images/cancelIcon.png';
 import hand_wave from "../feedback-Forms/images/hand_wave.png";
 import Customerbg1 from "../feedback-Forms/images/Customerbg1.jpeg";
 import Customerbg2 from "../feedback-Forms/images/Customerbg2.jpeg"
@@ -15,7 +15,7 @@ const CustomerFeedback = () => {
       <div className="Body_Form">
         <div className="formMain">
           <div className="cancelDiv">
-            <img src={CancelIcon} id="cancel_icon" alt="" />
+            <img src={cancelIcon} id="cancel_icon" alt="" />
           </div>
           <div className="formTitleDiv">
             <img src={hand_wave} id="hand_wave" alt="" />
