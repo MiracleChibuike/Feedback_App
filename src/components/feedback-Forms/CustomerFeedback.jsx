@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 import "../feedback-Forms/Customer.css";
-import CancelIcon from "../feedback-Forms/images/CancelIcon.png";
+import CancelIcon from "../feedback-Forms/images/cancelIcon.png";
 import hand_wave from "../feedback-Forms/images/hand_wave.png";
 import Customerbg1 from "../feedback-Forms/images/Customerbg1.jpeg";
 import Customerbg2 from "../feedback-Forms/images/Customerbg2.jpeg";
