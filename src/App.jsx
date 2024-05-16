@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 import CustomerFeedback from "./components/feedback-Forms/CustomerFeedback";
+import AppFeedback from "./components/feedback-Forms/AppFeedback";
 
 function App() {
   const [isSignedUp, setIsSignedUp] = useState(false);
@@ -20,6 +21,9 @@ function App() {
           path="/SignUp"
           element={<SignUp setIsSignedUp={setIsSignedUp} />}
         />
+        <Route path="/Appfeedback" element={<AppFeedback />}>
+          {" "}
+        </Route>
       </Routes>
     </Router>
   );

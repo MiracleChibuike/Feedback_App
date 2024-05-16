@@ -1,0 +1,173 @@
+
+:root{
+  --ash-white: #f4f4f4;
+  --light-blue: rgb(86, 86, 218);
+  --clr-shade-blue: rgb(70, 70, 200);
+  --clr-dark: rgb(0, 0, 0);
+  --clr-dark-gray: rgba(144, 139, 139, 0.268);
+  --clr-white: #fff;
+  --clr-error: #720404;
+}
+
+.App_Container{
+    background: var(--ash-white);
+    display: grid;
+    min-height: 100vh;
+    place-content: center;
+    align-content: center;
+}
+
+.App_Form{
+      border-radius: 3px;
+    box-shadow: 0 0 15px var(--clr-dark-gray);
+    padding: 20px 30px;
+    margin: 10px 20px;
+    background: var(--clr-white);
+}
+.modal{
+    display: none;
+}
+
+.removeMode{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid var(--light-blue);
+   padding: 10px;
+}
+.removeMode:hover{
+    border: 2px solid var(--clr-error);
+    cursor: pointer;
+}
+.modal_Display{
+    border-radius: 3px;
+    box-shadow: 0 0 15px var(--clr-dark-gray);
+    padding: 20px 30px;
+    margin: 10px 20px;
+    background: var(--clr-white);
+    position: absolute;
+    bottom: 40%;
+}
+.modalContainer{
+    text-align: center;
+}
+.feedback_success_Msg{
+    margin: 15px 0;
+    line-height: 2;
+}
+.caption{
+    text-align: center;
+}
+.titleHeading{
+    margin: 18px 0;
+}
+.preference{
+    margin: 25px 0;
+    text-align: center;
+}
+.prefernceButtons{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    /* row-gap: 10px; */
+    text-align: center;
+    /* margin: 25px 0; */
+}
+.prefernceButtons button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--light-blue);
+    background: transparent;
+    color: var(--light-blue);
+    margin-bottom: 10px;
+}
+
+.secondPref button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--light-blue);
+    background: transparent;
+    color: var(--light-blue);
+    margin:  0 5px;
+}
+.toggleButtonsPref{
+    background: var(--clr-shade-blue);
+    color: var(--clr-white);
+    border-radius: 4px;
+}
+
+.likes_Rate{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.Comments{
+    margin: 35px 0;
+}
+
+.Comments label{
+    margin: 10px 0;
+}
+.feature_to_Add, .client_email{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+}
+
+#feature, #Email_client{
+    padding: 15px 8px;
+    background: transparent;
+    border: 1px solid var(--clr-dark-gray);
+    border-radius: 4px;
+    outline: none;
+    font-size: 15px;
+}
+#feature:focus, #Email_client:focus{
+    box-shadow: 0 0 5px var(--clr-shade-blue);
+    border: 1px solid var(--clr-shade-blue);
+}
+
+.App_Feedback_submit{
+    text-align: center;
+}
+
+#submit_formfeedback{
+    background: var(--clr-shade-blue);
+    color: var(--clr-white);
+    border: none;
+    border-radius: 3px;
+    width: 100%;
+    padding: 12px 0;
+    cursor: pointer;
+    margin: 15px 0 0 0;
+}
+
+#submit_formfeedback:hover{
+    transition: .3s ease-in;
+    border-radius: 25px;
+    background: var(--light-blue);
+}
+
+.errorMsg, .response_error_Msg{
+    color: var(--clr-error);
+    display: none;
+}
+
+#successful{
+    width: 50px;
+}
+
+@media (width <= 750px) {
+.modal_Display{
+    bottom: 35%;
+
+
+    /* margin-right: 30px; */
+}
+.modal{
+    position: relative;
+    bottom: 30%;
+}
+}
