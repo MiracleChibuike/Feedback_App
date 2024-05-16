@@ -31,7 +31,7 @@ const CustomerFeedback = () => {
           <form action="" autoComplete="on">
             <div className="AppUsage">
               <label htmlFor="Usage" id="AppUsageLabel">
-                How often do you use our app?
+                How often do you use our App?
               </label>
               <select name="" id="UsageInput">
                 <option value="Everyday">Everyday</option>
