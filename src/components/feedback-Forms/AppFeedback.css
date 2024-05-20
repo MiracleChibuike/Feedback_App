@@ -24,6 +24,10 @@
     margin: 10px 20px;
     background: var(--clr-white);
 }
+.titleHeading a{
+    color: var(--clr-dark);
+    text-decoration: none;
+}
 .modal{
     display: none;
 }
@@ -50,6 +54,19 @@
 }
 .modalContainer{
     text-align: center;
+}
+#landing_route_btn{
+    padding: 7px 10px;
+    background: var(--light-blue);
+    border: none;
+    color: var(--clr-white);
+    border-radius: 4px;
+    cursor: pointer;
+}
+#landing_route_btn:hover{
+    transform: translateX(-15px);
+    transition: .4s;
+    background: var(--clr-shade-blue);
 }
 .feedback_success_Msg{
     margin: 15px 0;
@@ -82,6 +99,12 @@
     margin-bottom: 10px;
 }
 
+.prefernceButtons button:hover, .secondPref button:hover{
+    background: var(--light-blue);
+    color: var(--clr-white);
+    cursor: pointer;
+    transition: .2s;
+}
 .secondPref button{
     width: 40px;
     height: 40px;

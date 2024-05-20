@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import CustomerFeedback from "../components/feedback-Forms/CustomerFeedback";
+import LandingPage from "../components/feedback-Forms/LandingPage";
 import "./SignUp.css";
 
 const SignUp = () => {
@@ -24,6 +24,7 @@ const SignUp = () => {
     var email = document.getElementById("emailUser");
     var name = document.getElementById("nameUser");
     var passCodeUser = document.getElementById("passwordUser");
+    var username_Text = name.value;
 
     var valiDateEmail = email.value.trim();
     var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -39,12 +40,14 @@ const SignUp = () => {
     } else {
       alert(`Sign Up Successful \n You are now logged in as ${name.value}`);
       setIsSignedUp(true); // Set state to indicate successful signup
+      console.log(username_Text);
+        localStorage.setItem("userData", JSON.stringify(username_Text));
       document.querySelector("form").reset();
     }
   };
 
   if (isSignedUp) {
-    return <CustomerFeedback />;
+    return <LandingPage />;
   }
 
 

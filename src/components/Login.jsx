@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
-import CustomerFeedback from "../components/feedback-Forms/CustomerFeedback";
+import LandingPage from "../components/feedback-Forms/LandingPage";
 import "./Login.css";
 
 const Login = () =>{
@@ -22,6 +22,12 @@ const Login = () =>{
              var form = document.querySelector("form");
             var username = document.getElementById("userName");
             var userPasscode = document.getElementById("userPassword");
+            var username_Text = username.value;
+            var showuser_name = document.getElementById("userData_Name");
+            var display_user_Bold = document.getElementById("displayBold_user");
+
+            var userData = localStorage.getItem("userData");
+            var store_user = JSON.parse(userData);
                 e.preventDefault()
             if (username.value == "") {
                 alert("Please enter your user name");
@@ -30,12 +36,15 @@ const Login = () =>{
             }else{
               alert(` Welcome Back ${username.value}`);
               setIsSignedUp(true); // Set state to indicate successful signup
+              console.log(userData);
+               localStorage.setItem("userData", JSON.stringify(username_Text));
+            
             }
           
         };
 
         if (isSignedUp) {
-          return <CustomerFeedback />;
+          return <LandingPage />;
         }
 
         // Login Container/Component

@@ -5,12 +5,13 @@ import Login from "./components/Login";
 import SignUp from "./components/SignUp";
 import CustomerFeedback from "./components/feedback-Forms/CustomerFeedback";
 import AppFeedback from "./components/feedback-Forms/AppFeedback";
+import LandingPage from "./components/feedback-Forms/LandingPage";
 
 function App() {
   const [isSignedUp, setIsSignedUp] = useState(false);
 
   if (isSignedUp) {
-    return <CustomerFeedback />;
+    return <LandingPage />;
   }
 
   return (
@@ -21,7 +22,13 @@ function App() {
           path="/SignUp"
           element={<SignUp setIsSignedUp={setIsSignedUp} />}
         />
+        <Route path="/Customerfeedback" element={<CustomerFeedback />}>
+          {" "}
+        </Route>
         <Route path="/Appfeedback" element={<AppFeedback />}>
+          {" "}
+        </Route>
+        <Route path="/LandingPage" element={<LandingPage />}>
           {" "}
         </Route>
       </Routes>

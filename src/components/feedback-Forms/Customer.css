@@ -35,6 +35,10 @@
     margin: 20px 0;
 }
 
+.FormTitle a{
+    color: var(--clr-dark);
+    text-decoration: none;
+}
 #hand_wave{
     width: 50px;
     position: relative;
@@ -94,6 +98,36 @@
     border-radius: 20px;
     transition: .4s;
 }
+
+
+.modal{
+    display: none;
+}
+
+.removeMode{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 2px solid var(--light-blue);
+   padding: 10px;
+}
+.removeMode:hover{
+    border: 2px solid var(--clr-error);
+    cursor: pointer;
+}
+.modal_Display{
+    border-radius: 3px;
+    box-shadow: 0 0 15px var(--clr-dark-gray);
+    padding: 20px 30px;
+    margin: 10px 20px;
+    background: var(--clr-white);
+    position: absolute;
+    bottom: 40%;
+}
+.modalContainer{
+    text-align: center;
+}
+
 
 @media (width <= 750px) {
    #hand_wave{

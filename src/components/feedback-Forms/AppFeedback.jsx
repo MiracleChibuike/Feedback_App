@@ -10,6 +10,12 @@ import Customerbg2 from "../feedback-Forms/images/Customerbg2.jpeg";
 import success_Icon from "../feedback-Forms/images/success_Icon.png";
 
 const AppFeedback = () => {
+
+  const navigate_to_Home = useNavigate();
+
+  const goto_Landing_page = () =>{
+    navigate_to_Home("/LandingPage");
+  }
   const rate = [document.querySelectorAll(".rate")];
 
   const toggleBtns = (e) => {
@@ -62,10 +68,15 @@ const AppFeedback = () => {
     <div className="App_Container">
       <div className="App_Form">
         <div className="cancelDiv">
-          <img src={CancelIcon} id="cancel_icon" alt="" />
+          <img
+            src={CancelIcon}
+            id="cancel_icon"
+            onClick={goto_Landing_page}
+            alt=""
+          />
         </div>
         <div className="caption">
-          <h2 className="titleHeading">Customer satisfaction survey </h2>
+          <h2 className="titleHeading">{""} Customer satisfaction survey</h2>
           <p>
             How likely are you to recommend our <br /> service to a friend or
             colleague?
@@ -153,6 +164,10 @@ const AppFeedback = () => {
                 <br />
                 Thank You
               </p>
+              {/* Button Home */}
+              <button id="landing_route_btn" onClick={goto_Landing_page}>
+                Back to home
+              </button>
             </div>
           </div>
         </div>
