@@ -30,6 +30,16 @@
 }
 .modal{
     display: none;
+    animation: rotateModal 1s linear;
+}
+
+@keyframes rotateModal {
+    0%{
+        transform: scale(0);
+    }
+    50%, 100%{
+        transform: scale(0.9, 1.0);
+    }
 }
 
 .removeMode{
