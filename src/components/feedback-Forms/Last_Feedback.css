@@ -1,0 +1,107 @@
+
+:root{
+  --ash-white: #f4f4f4;
+  --light-blue: rgb(86, 86, 218);
+  --clr-shade-blue: rgb(70, 70, 200);
+  --clr-dark: rgb(0, 0, 0);
+  --clr-dark-gray: rgba(144, 139, 139, 0.268);
+  --clr-white: #fff;
+}
+
+.container{
+    background: var(--ash-white);
+}
+.form_Body{
+    margin: 25px 15px;
+}
+.canCel{
+    display: flex;
+    justify-content: flex-end;
+}
+#cancel_icon{
+    cursor: pointer;
+}
+
+.heading{
+    margin: 15px 0;
+}
+
+/* Form _Heading */
+.formHead form{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 10px;
+}
+
+.formHead form div label{
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+    bottom: 5px;
+}
+.formHead form div input{
+    padding: 10px 7px;
+    width: 300px;
+    outline: none;
+    border: 1px solid var(--clr-dark-gray);
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.formHead form div input:focus{
+    box-shadow: 0 0 5px var(--light-blue);
+    border: 1px solid var(--light-blue);
+}
+
+.Experience_rate{
+    margin: 35px 15px;
+}
+
+.First_rating{
+    padding: 15px 0;
+}
+.First_rating p{
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+.check_rate{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+.check_rate div{
+    text-align: center;
+}
+@media (min-width: 0) and (max-width: 750px){
+    /* Form _Heading */
+.formHead form{
+    display: block;
+}
+
+.formHead form div{
+    margin: 25px 0;
+}
+.check_rate{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.check_rate div{
+    margin: 10px 0;
+    text-align: center;
+}
+}
+
+
+
+@media (min-width: 768px) and (max-width: 1130px){
+    /* Form _Heading */
+.formHead form{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.formHead form div{
+    margin: 25px 0;
+}
+}
+

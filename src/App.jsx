@@ -6,6 +6,7 @@ import SignUp from "./components/SignUp";
 import CustomerFeedback from "./components/feedback-Forms/CustomerFeedback";
 import AppFeedback from "./components/feedback-Forms/AppFeedback";
 import LandingPage from "./components/feedback-Forms/LandingPage";
+import Last_Feedback from "./components/feedback-Forms/Last_Feedback";
 
 function App() {
   const [isSignedUp, setIsSignedUp] = useState(false);
@@ -29,6 +30,9 @@ function App() {
           {" "}
         </Route>
         <Route path="/LandingPage" element={<LandingPage />}>
+          {" "}
+        </Route>
+        <Route path="/Last_Feedback" element={<Last_Feedback />}>
           {" "}
         </Route>
       </Routes>

@@ -8,6 +8,8 @@ import avatar_user from "../feedback-Forms/images/avatar_user.png";
 import product_feedback from "../feedback-Forms/images/Product_Feedback.png"
 import service_feedback from "../feedback-Forms/images/Service_Feedback.png";
 import log_out from "../feedback-Forms/images/log_out.png"
+import lastfeedbackImg from "../feedback-Forms/images/last_feedback.png";
+
 
 
 const LandingPage = () => {
@@ -41,6 +43,19 @@ const LandingPage = () => {
     if ((log_out_Box.style.display = "none")) {
       log_out_Box.style.display = "block";
     }
+  };
+
+  const navigate_Last = useNavigate();
+
+  const Last_navigation = () => {
+    navigate_Last("/Last_Feedback");
+  }
+
+  // navigate to the last Feedback
+  const navigate_landing = useNavigate();
+
+  const Landing_nav = () => {
+    navigate_landing("/LandingPage");
   };
 
   return (
@@ -107,6 +122,27 @@ const LandingPage = () => {
                 innovate and prioritize the features that matter most to you.{" "}
                 <br /> Let us know what functionalities you'd like to see and
                 how <br /> we can make our products more useful for you.
+              </p>
+            </div>
+          </div>
+          {/* Last Feedback Form */}
+          <div className="service_feedback" onClick={Last_navigation}>
+            <img
+              src={lastfeedbackImg}
+              id="service_feedback_form"
+              alt="submit a survey for the product feedback"
+            />
+            <div className="service_info">
+              <h3>Training Feedback Form</h3>
+              <p>
+                <p>
+                  <strong>Can you help us?</strong>
+                </p>
+                Your feedback is important to us. Please share your <br />{" "}
+                suggestions for new features or improvements to <br /> existing
+                parts of the training. Your insights will <br /> help us make
+                this training more engaging and <br /> effective for future
+                participants
               </p>
             </div>
           </div>
