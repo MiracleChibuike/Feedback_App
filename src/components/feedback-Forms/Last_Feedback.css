@@ -27,19 +27,19 @@
 }
 
 /* Form _Heading */
-.formHead form{
+.formHead {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 10px;
 }
 
-.formHead form div label{
+.formHead  div label{
     font-weight: bold;
     font-size: 14px;
     position: relative;
     bottom: 5px;
 }
-.formHead form div input{
+.formHead  div input{
     padding: 10px 7px;
     width: 300px;
     outline: none;
@@ -48,7 +48,7 @@
     font-size: 15px;
     cursor: pointer;
 }
-.formHead form div input:focus{
+.formHead  div input:focus{
     box-shadow: 0 0 5px var(--light-blue);
     border: 1px solid var(--light-blue);
 }
@@ -72,13 +72,73 @@
 .check_rate div{
     text-align: center;
 }
+
+/* Additional comments */
+.comments{
+    display: flex;
+    flex-direction: column;
+    margin: 35px 15px;
+}
+.comments label{
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+    bottom: 5px;
+    text-transform: capitalize;
+}
+
+#Comments_addition{
+    padding: 15px 10px;
+     outline: none;
+    border: 1px solid var(--clr-dark-gray);
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+    background: transparent;
+    height: 100px;
+}
+
+#Comments_addition:focus{
+      box-shadow: 0 0 5px var(--light-blue);
+    border: 1px solid var(--light-blue);
+}
+#Comments_addition::placeholder{
+    font-size: 13px;
+}
+.submit{
+    margin: 35px 15px;
+}
+#training_submit_button{
+    width: 100%;
+    background: var(--clr-shade-blue);
+    color: var(--clr-white);
+    border: none;
+    border-radius: 2px;
+    padding: 15px 0;
+    font-size: 16px;
+    /* font-weight: bold; */
+    cursor: pointer;
+}
+#training_submit_button:hover{
+     background: var(--light-blue);
+    border-radius: 20px;
+    transition: .4s;
+}
+
+#modal_strong{
+    /* display: block; */
+    position: absolute;
+    width: 700px;
+    left: 40%;
+    top: 40%;
+}
 @media (min-width: 0) and (max-width: 750px){
     /* Form _Heading */
-.formHead form{
+.formHead {
     display: block;
 }
 
-.formHead form div{
+.formHead  div{
     margin: 25px 0;
 }
 .check_rate{
@@ -89,19 +149,34 @@
     margin: 10px 0;
     text-align: center;
 }
+
+#modal_strong{
+    /* display: block; */
+    position: absolute;
+    width: 350px;
+    left: 7%;
+    top: 40%;
+}
 }
 
 
 
 @media (min-width: 768px) and (max-width: 1130px){
     /* Form _Heading */
-.formHead form{
+.formHead {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
 
-.formHead form div{
+.formHead  div{
     margin: 25px 0;
+}
+#modal_strong{
+    /* display: block; */
+    position: absolute;
+    width: 500px;
+    left: 30%;
+    top: 40%;
 }
 }
 
